@@ -14,6 +14,7 @@ namespace Day1
             {
                 Console.WriteLine(str);
             }
+
         }
     }
 }
