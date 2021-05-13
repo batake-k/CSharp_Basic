@@ -6,7 +6,7 @@ namespace ConsoleApp1
 {
     abstract class BaseMachine
     {
-        protected int prize = 0;
+        protected int prize;
 
         public BaseMachine(int bet)
         {

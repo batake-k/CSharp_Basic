@@ -4,22 +4,24 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class MachineA : BaseMachine
+    class MachineC : BaseMachine
     {
-        public MachineA(int bet) : base(bet) { }
+        public MachineC(int bet) : base(bet) { }
 
         public override bool run()
         {
-            if(prize <= 0)
+            if (prize <= 11)
             {
                 return false;
             }
 
+            prize -= 10;
+
             Random r = new System.Random();
 
-            if(r.NextDouble() >= 0.5)
+            if (r.NextDouble() >= 0.5)
             {
-                prize = (int)(prize * 1.5);
+                prize = (int)(prize * 2);
             }
             else
             {
